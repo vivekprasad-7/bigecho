@@ -1,0 +1,27 @@
+Requirement1 - Using CAT command show data present in file, copy , append, show file with line 
+CAT(concatenate files)-  It helps us to create, view, concatenate files.
+1. cat:: show all text 
+2. cat file1.txt file2.txt:: show multiple
+3. cat -n hi.txt:: with line no.
+4. cat >hi3.txt:: create a file.press ctr D to exit.
+5. cat hi2.txt>hi3.txt::copy
+6. cat hi.txt>>hi2.txt:: append
+
+Requirement2- find first n line, or from 1 to n line
+SED(stream editor)- searching, find and replace, insertion or deletion
+1. sed -n 5,10p hi2.txt:: find 5th to 10th line.
+ 
+Requirement3-find total line in a file
+WC
+1. wc -l hi.txt:: count
+
+Requirement4- find history of commans fired
+1.history
+
+requirement5- sort files by date
+1. ls -lt::asc with time
+2. ls -lrt:: desc with time
+
+requirement6- list file name only
+TR- translating or deleting characters.
+1. ls | tr '\n' '\n'
