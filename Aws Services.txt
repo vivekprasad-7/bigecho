@@ -1,0 +1,66 @@
+DynamoDB
+Intro
+1. Amazon DynamoDB is a fully managed NoSQL database.
+2. DynamoDB also offers encryption at rest, which eliminates the operational burden and complexity involved in protecting sensitive data
+3. All of your data is stored on solid-state disks (SSDs) and is automatically replicated across multiple Availability Zones in an AWS Region, providing built-in high availability and data durability.
+
+python package
+1. boto3 Session, Resources and client- 
+	https://stackoverflow.com/questions/42809096/difference-in-boto3-between-resource-client-and-session
+	Resource : This is the high-level service class recommended to be used.
+	you need to use the custom session to override the default session configuration
+	Client is a low level class object
+ For each client call, you need to explicitly specify the targeting resources, the designated service target name must be pass long	
+
+2. boto3.resource("dynamodb", region_name='us-west-2').Table('CDH_SAVE_FOR_LATER')::lazy-loaded
+	table.put_item(Item={key:value})
+	response = table.get_item(Key={key:value})
+	table.delete_item(Key={key:value})
+	table.update_item(Key={key:value},UpdateExpression='SET age = :val1',ExpressionAttributeValues={':val1': 26})
+	table.scan(FilterExpression=Attr('email_id').eq(email))::eq,ne,lte,gt,between,begins_with,contains,is_in operators 
+	table.query(KeyConditionExpression=Key('anonymous_id').eq(i) )
+	table.batch_writer()->batch.delete_item( Key={'cdh_consumer_id': item['cdh_consumer_id']})::This method returns a handle to a batch writer object that will automatically handle buffering and sending items in batches
+	The boto3.dynamodb.conditions.Attr should be used when the condition is related to an attribute of the item:
+	The boto3.dynamodb.conditions.Key should be used when the condition is related to the key of the item. 	
+3. Create and Put CSV to S3
+	 StringIO()
+	 to_csv(buffer)
+	 object.put(buffer.getvalue())
+
+Dynamodb Data Modeling
+. shift from rdbms thinking
+. identify access patterns before table design
+. identify PK and indexes to minimize number of requests to dynamodb.
+. 1 table for employee, project and company.
+
+Inverted Index- for many to many relationship modeling.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
