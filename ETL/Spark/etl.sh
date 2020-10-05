@@ -1,0 +1,1 @@
+gcloud dataproc jobs submit pyspark --cluster levi-etl-transient --region us-east1 --py-files gs://heinens-dataplatform-artif/lib/python/heinens-1.0-py2.7.egg,gs://heinens-dataplatform-artif/lib/python/dunnhumby-latest.egg gs://heinens-dataplatform-artif/scripts/publish_EASL_trans.py -- --entity baskets --partition "('year:2016/month:06/day:27')"
