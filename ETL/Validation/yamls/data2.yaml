@@ -1,0 +1,17 @@
+column1:
+  - id
+  - string
+  - Trnava
+  - Moldava
+  - Trencin
+column2:
+  - name
+  - String
+  - Duslo Sala
+  - Matador Puchov
+column3:
+  - sum
+  - String
+  - Duslo Sala
+  - Matador Pucho
+
