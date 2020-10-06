@@ -1,0 +1,13 @@
+Client Mode-driver in the same machine.
+default cluster = yarn
+
+EMR step function
+spark-submit --master yarn --deploy-mode cluster --py-files s3://heinens-dataplatform-artif/lib/python/levi-latest.egg gs://heinens-dataplatform-artif/lib/python/dunnhumby-latest.egg --files s3://heinens-dataplatform-artif/scripts/publish_EASL_trans.py --partition "('year:2016/month:06/day:27')"         
+
+yarn logs -applicationId application_1551148204560_0338
+
+cluster vs step execution
+1. cluster--> add steps via jar loction, i/p and o/p bucket location 
+3. open port 22--ssh
+3. run spark-submit
+

@@ -25,3 +25,5 @@ requirement5- sort files by date
 requirement6- list file name only
 TR- translating or deleting characters.
 1. ls | tr '\n' '\n'
+
+zip and unzip
