@@ -1,3 +1,4 @@
+
 Client Mode-driver in the same machine.
 default cluster = yarn
 
@@ -11,3 +12,46 @@ cluster vs step execution
 3. open port 22--ssh
 3. run spark-submit
 
+.Choosing a column compression type
+
+truncate biglist;
+copy biglist from 's3://mybucket/biglist.txt' 
+iam_role 'arn:aws:iam::0123456789012:role/MyRedshiftRole'
+delimiter '|' COMPUPDATE ON;
+
+
+Challanges Redshift
+
+Unable to add column in-between list of columns i.e unable to add column in any specified order. Its always adding at end.
+Performance based issues that's needs to be handled in proper maintaince like Vacuum and Analyze, SORT Keys, Compressions, Distribution styles etc
+There is no AZ based replication we have to setup from base ground
+------------------------------------------------------------------------------------------------------------------
+Solution 
+Amazon Redshift stores columnar data in 1 MB disk blocks. The min and max values for each block are stored as part of the metadata.
+If recent data is queried most frequently, specify the timestamp column as the leading column for the sort key.
+
+Queries are more efficient because they can skip entire blocks that fall outside the time range.
+
+If you do frequent range filtering or equality filtering on one column, specify that column as the sort key.
+
+Amazon Redshift can skip reading entire blocks of data for that column. It can do so because it tracks the minimum and maximum column values stored on each block and can skip blocks that don't apply to the predicate range.
+
+If you frequently join a table, specify the join column as both the sort key and the distribution key.
+
+Doing this enables the query optimizer to choose a sort merge join instead of a slower hash join. Because the data is already sorted on the join key, the query optimizer can bypass the sort phase of the sort merge join.
+
+For example, if a table stores five years of data sorted by date and a query specifies a date range of one month, up to 98 percent of the disk blocks can be eliminated from the scan. If the data is not sorted, more of the disk blocks (possibly all of them) have to be scanned.
+An interleaved sort key gives equal weight to each column in the sort key, so query predicates can use any subset of the columns that make up the sort key, in any order
+To understand the impact of the chosen sort key on query performance, use the EXPLAIN command.
+Compound sort key
+you should run a VACUUM operation regularly, especially after large data loads, to re-sort and re-analyze the data
+------------------------------------------------------------------------------------------------------------------
+Part A ENCODING
+https://www.blendo.co/amazon-redshift-guide-data-analyst/maintenance/column-compression-settings/
+Byte-Dictionary Encoding can be more efficient. Think of possible cases for such an encoding columns that hold data like country names
+For DATETIMES and id/key Delta Encodings can be more efficient.
+LZO is automatically assigned by Amazon Redshift for the majority of the available data
+Mostly Encoding is an interesting case of an encoding, mainly used with numerical data.
+. If for example, you have relatively small integers and a few outliers of huge numbers, you can select a data type that can hold the large numbers but compress the majority of the values using a smaller numerical data type.
+Text255 and Text32K encodings like the Runlength Encoding are exploiting the higher occurrence of specific terms inside a text to compress the column data. If the analyst has identified that a column with string contains specific terms more often, she can select this encoding.
+ It might not be a frequent process like Vacuuming, but you should certainly do it
