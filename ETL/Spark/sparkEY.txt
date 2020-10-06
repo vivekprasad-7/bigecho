@@ -1,0 +1,6 @@
+st.select("col1").where(businessutil.isnullFind(structureds.col("docdate")),"")
+concat("",when(businessutil.isnullFind(structureds.col("docdate")),"").otherwize(structureds.col("docdate")))
+when(businessutil.isnullFind(structureds.col("docdate")),"").otherwize(when().otherwize)
+withcolumn("",when(businessutil.isnullFind(structureds.col("docdate")),lit("N")))
+def Column isnullfind(Column col1)
+	return st.col(col1).isNull().orst.col.equalTo(0)

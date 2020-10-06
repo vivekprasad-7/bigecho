@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<CmOfferLoad Version="2.00.00" CreatedBy="Copient" EngineId="0">
+
+  <Auxiliary>
+
+    <ProductGroup ID="202511" Name="eCart Delivery Fee" Desc="">
+
+      <Product ID="00000000051613" Type="1" />
+
+    </ProductGroup>
+
+    <CustomerGroup ID="337215" Name="eCart - RSC Free Delivery 2 Times" ExtGroupID="" IsOptInGroup="false" />
+
+    <TerminalType ID="1" Name="All CM Terminals" Desc="All CM Terminals" ExtTerminalCode="1" LayoutID="0" EngineID="0" FuelProcessing="False" AnyTerminal="True" SpecificPromosOnly="0" />
+
+    <ChargeBackDept ID="0" Name="Item's Department" ExternalId="0" />
+
+    <OfferCategory ID="7" Desc="LT: Long Term Offers" />
+
+    <LocationGroup ID="2" Name="Test Stores (Now 140)">
+
+      <Location ID="140" Name="Lab 140" />
+
+      <Location ID="499" Name="LUNCH ROOM MO #448 SALES [ACS 62]" />
+
+    </LocationGroup>
+
+    <LocationGroup ID="102" Name="0 - Something Extra CRM Stores">
+
+      <Location ID="102" Name="SPARKS [ACS 62]" />
+
+      <Location ID="103" Name="MAYBERRY [ACS 62]" />
+
+      <Location ID="105" Name="RENO [ACS 62]" />
+
+      <Location ID="106" Name="KEYSTONE [ACS 62]" />
+
+      <Location ID="108" Name="MT. ROSE [ACS 62]" />
+
+      <Location ID="109" Name="GARDNERVILLE [ACS 62]" />
+
+      <Location ID="110" Name="SPANISH SPRINGS [ACS 62]" />
+
+      <Location ID="113" Name="INCLINE VILLAGE [ACS 62]" />
+
+      <Location ID="114" Name="CARSON CITY [ACS 62]" />
+
+      <Location ID="115" Name="GOLDEN VALLEY [ACS 62]" />
+
+      <Location ID="117" Name="ELKO [ACS 62]" />
+
+      <Location ID="119" Name="STATELINE [ACS 62]" />
+
+      <Location ID="120" Name="TONOPAH [ACS 62]" />
+
+      <Location ID="121" Name="MCCARRAN [ACS 62]" />
+
+      <Location ID="122" Name="FERNLEY [ACS 62]" />
+
+      <Location ID="123" Name="YERINGTON [ACS 62]" />
+
+      <Location ID="124" Name="CAUGHLIN [ACS 62]" />
+
+      <Location ID="127" Name="THE Y [ACS 62]" />
+
+      <Location ID="140" Name="Lab 140" />
+
+      <Location ID="206" Name="WOODLAND [ACS 62]" />
+
+      <Location ID="213" Name="GRASS VALLEY [ACS 62]" />
+
+      <Location ID="227" Name="ROSEVILLE #2 [ACS 62]" />
+
+      <Location ID="228" Name="ROSEVILLE [ACS 62]" />
+
+      <Location ID="229" Name="AUBURN [ACS 62]" />
+
+      <Location ID="230" Name="LINCOLN [ACS 62]" />
+
+      <Location ID="231" Name="LOOMIS [ACS 62]" />
+
+      <Location ID="233" Name="RED BLUFF [ACS 62]" />
+
+      <Location ID="236" Name="OROVILLE [ACS 62]" />
+
+      <Location ID="239" Name="ANTELOPE [ACS 62]" />
+
+      <Location ID="242" Name="YUBA CITY [ACS 62]" />
+
+      <Location ID="245" Name="CHICO [ACS 62]" />
+
+      <Location ID="247" Name="YREKA [ACS 62]" />
+
+      <Location ID="248" Name="REDDING [ACS 62]" />
+
+      <Location ID="249" Name="CHICO [ACS 62]" />
+
+      <Location ID="302" Name="GALT VILLAGE [ACS 62]" />
+
+     <Location ID="304" Name="OAKLEY [ACS 62]" />
+
+      <Location ID="306" Name="STOCKTON-MORADA RANCH [ACS 62]" />
+
+      <Location ID="308" Name="MODESTO [ACS 62]" />
+
+      <Location ID="309" Name="MERCED [ACS 62]" />
+
+      <Location ID="310" Name="TURLOCK [ACS 62]" />
+
+      <Location ID="311" Name="MANTECA [ACS 62]" />
+
+      <Location ID="313" Name="SANTA ROSA [ACS 62]" />
+
+      <Location ID="315" Name="FREMONT [ACS 62]" />
+
+      <Location ID="316" Name="PLEASANTON [ACS 62]" />
+
+      <Location ID="317" Name="TRACY [ACS 62]" />
+
+      <Location ID="319" Name="NAPA [ACS 62]" />
+
+      <Location ID="321" Name="SAN PABLO [ACS 62]" />
+
+      <Location ID="328" Name="UKIAH [ACS 62]" />
+
+      <Location ID="329" Name="PETALUMA [ACS 62]" />
+
+      <Location ID="330" Name="SUISUN [ACS 62]" />
+
+      <Location ID="331" Name="FAIRFIELD [ACS 62]" />
+
+      <Location ID="332" Name="FAIRFIELD [ACS 62]" />
+
+      <Location ID="333" Name="ANTIOCH [ACS 62]" />
+
+      <Location ID="336" Name="BRENTWOOD [ACS 62]" />
+
+      <Location ID="337" Name="ROHNERT PARK [ACS 62]" />
+
+      <Location ID="338" Name="OAKDALE [ACS 62]" />
+
+      <Location ID="339" Name="MODESTO [ACS 62]" />
+
+      <Location ID="340" Name="OAKHURST [ACS 62]" />
+
+      <Location ID="341" Name="WINDSOR [ACS 62] NoMonitor" />
+
+      <Location ID="343" Name="BENICIA [ACS 62]" />
+
+      <Location ID="344" Name="VACAVILLE [ACS 62]" />
+
+      <Location ID="405" Name="FREEPORT [ACS 62]" />
+
+      <Location ID="409" Name="FOLSOM [ACS 62]" />
+
+      <Location ID="410" Name="FOLSOM AT THE PARKWAY [ACS 62]" />
+
+      <Location ID="412" Name="GRANITE BAY [ACS 62]" />
+
+      <Location ID="416" Name="MARCONI [ACS 62]" />
+
+      <Location ID="417" Name="SAN JUAN [ACS 62]" />
+
+      <Location ID="420" Name="COLLEGE GREENS [ACS 62]" />
+
+      <Location ID="421" Name="MADISON &amp; HAZEL [ACS 62]" />
+
+      <Location ID="422" Name="PLACERVILLE [ACS 62]" />
+
+      <Location ID="424" Name="EL DORADO HILLS [ACS 62]" />
+
+      <Location ID="426" Name="JACKSON [ACS 62]" />
+
+      <Location ID="431" Name="CARMICHAEL [ACS 62]" />
+
+      <Location ID="435" Name="HOWE AND FAIR OAKS [ACS 62]" />
+
+      <Location ID="440" Name="RANCHO CORDOVA ANATOLIA [ACS 62]" />
+
+      <Location ID="443" Name="ELK GROVE-RALEY'S CENTER [ACS 62]" />
+
+      <Location ID="445" Name="LODI [ACS 62]" />
+
+      <Location ID="447" Name="NATOMAS [ACS 62]" />
+
+      <Location ID="448" Name="WEST SACRAMENTO [ACS 62]" />
+
+      <Location ID="499" Name="LUNCH ROOM MO #448 SALES [ACS 62]" />
+
+      <Location ID="501" Name="FRUITRIDGE RD. [ACS 62]" />
+
+      <Location ID="502" Name="ARDEN &amp; EASTERN [ACS 62]" />
+
+      <Location ID="506" Name="FLORIN RD. [ACS 62]" />
+
+      <Location ID="509" Name="SUNRISE &amp; CIRBY [ACS 62]" />
+
+      <Location ID="510" Name="W. EL CAMINO [ACS 62]" />
+
+      <Location ID="511" Name="MANZANITA &amp; CYPRESS [ACS 62]" />
+
+      <Location ID="512" Name="FOOTHILLS BLVD. [ACS 62]" />
+
+      <Location ID="514" Name="RUSH RIVER [ACS 62]" />
+
+      <Location ID="515" Name="CAMERON PARK [ACS 62]" />
+
+      <Location ID="516" Name="LAGUNA [ACS 62]" />
+
+      <Location ID="517" Name="AUBURN [ACS 62]" />
+
+      <Location ID="518" Name="ROCKLIN [ACS 62]" />
+
+      <Location ID="519" Name="WALERGA RD. [ACS 62]" />
+
+      <Location ID="521" Name="YUBA CITY [ACS 62]" />
+
+      <Location ID="522" Name="GOLD RIVER [ACS 62]" />
+
+      <Location ID="523" Name="CALVINE [ACS 62]" />
+
+      <Location ID="524" Name="BROADSTONE [ACS 62]" />
+
+      <Location ID="525" Name="WATERMAN [ACS 62]" />
+
+      <Location ID="526" Name="WOODLAND [ACS 62]" />
+
+      <Location ID="528" Name="DUCKHORN &amp; ARENA [ACS 62]" />
+
+      <Location ID="534" Name="BEL AIR 534 [ACS 62]" />
+
+      <Location ID="601" Name="NEWMAN [ACS 62]" />
+
+      <Location ID="602" Name="GILROY [ACS 62]" />
+
+      <Location ID="603" Name="MORGAN HILL [ACS 62]" />
+
+      <Location ID="604" Name="LOS GATOS [ACS 62]" />
+
+      <Location ID="605" Name="HOLLISTER [ACS 62]" />
+
+      <Location ID="606" Name="CAMPBELL [ACS 62]" />
+
+      <Location ID="607" Name="SALINAS [ACS 62]" />
+
+      <Location ID="615" Name="CAPITOLA [ACS 62]" />
+
+      <Location ID="617" Name="WATSONVILLE [ACS 62]" />
+
+      <Location ID="620" Name="SCOTTS VALLEY [ACS 62]" />
+
+      <Location ID="621" Name="MARTINEZ [ACS 62]" />
+
+      <Location ID="623" Name="NAPA [ACS 62]" />
+
+      <Location ID="627" Name="WALNUT CREEK [ACS 62]" />
+
+      <Location ID="628" Name="REDWOOD CITY [ACS 62]" />
+
+      <Location ID="629" Name="SAN RAMON [ACS 62]" />
+
+      <Location ID="631" Name="LIVERMORE [ACS 62]" />
+
+      <Location ID="632" Name="ALAMEDA [ACS 62]" />
+
+      <Location ID="634" Name="MOUNTAIN VIEW [ACS 62]" />
+
+      <Location ID="635" Name="SAN JOSE [ACS 62]" />
+
+      <Location ID="636" Name="SANTA CLARA [ACS 62]" />
+
+    </LocationGroup>
+
+  </Auxiliary>
+
+  <Offer Id="1377504">
+
+    <RowData>
+
+      <OfferID>1377504</OfferID>
+
+      <Visible>True</Visible>
+
+      <ExtOfferID></ExtOfferID>
+
+      <IsTemplate>False</IsTemplate>
+
+      <FromTemplate>False</FromTemplate>
+
+      <Name>eCart - RSC Two Free Deliveries</Name>
+
+      <Description></Description>
+
+     <OfferCategoryID>7</OfferCategoryID>
+
+      <OfferTypeID>1</OfferTypeID>
+
+      <ProdStartDate>11/16/2017 12:00:00 AM</ProdStartDate>
+
+      <ProdEndDate>1/31/2019 11:59:00 PM</ProdEndDate>
+
+      <TestStartDate>3/1/2017 12:00:00 AM</TestStartDate>
+
+      <TestEndDate>3/1/2017 11:59:00 PM</TestEndDate>
+
+      <TierTypeID>0</TierTypeID>
+
+      <NumTiers>0</NumTiers>
+
+      <DistPeriod>-1</DistPeriod>
+
+      <DistPeriodLimit>2</DistPeriodLimit>
+
+      <DistPeriodVarID>369949</DistPeriodVarID>
+
+      <EmployeeFiltering>False</EmployeeFiltering>
+
+      <NonEmployeesOnly>False</NonEmployeesOnly>
+
+      <CRMRestricted>False</CRMRestricted>
+
+      <Deleted>False</Deleted>
+
+      <LastUpdate>2/12/2019 2:50:15 PM</LastUpdate>
+
+      <CreatedDate>11/15/2017 5:03:27 PM</CreatedDate>
+
+      <StatusFlag>0</StatusFlag>
+
+      <UpdateLevel>3</UpdateLevel>
+
+      <CRMEngineUpdateLevel>0</CRMEngineUpdateLevel>
+
+      <LastTXDate>2/12/2019 11:49:41 PM</LastTXDate>
+
+      <PriorityLevel>40</PriorityLevel>
+
+      <SharedLimitID>0</SharedLimitID>
+
+      <CRMEngineID>5</CRMEngineID>
+
+      <EngineID>0</EngineID>
+
+      <InstantWin>False</InstantWin>
+
+      <NumPrizesAllowed>0</NumPrizesAllowed>
+
+      <OddsOfWinning>100</OddsOfWinning>
+
+      <RandomWinners>False</RandomWinners>
+
+      <IWTransLevel>False</IWTransLevel>
+
+      <LastDistVarFlush>1/1/1980 12:00:00 AM</LastDistVarFlush>
+
+      <CMOADeployRpt>Export Okay</CMOADeployRpt>
+
+      <CMOADeployStatus>1</CMOADeployStatus>
+
+      <CMOARptDate>2/12/2019 11:49:35 PM</CMOARptDate>
+
+      <CMOADeploySuccessDate>2/12/2019 11:49:35 PM</CMOADeploySuccessDate>
+
+      <ExtOfferID2></ExtOfferID2>
+
+      <DisabledOnCFW>False</DisabledOnCFW>
+
+      <DeployDeferred>False</DeployDeferred>
+
+      <CreatedByAdminID>15</CreatedByAdminID>
+
+      <LastUpdatedByAdminID>15</LastUpdatedByAdminID>
+
+      <ExportToEDW>False</ExportToEDW>
+
+      <Favorite>False</Favorite>
+
+      <InboundCRMEngineID>0</InboundCRMEngineID>
+
+      <DisplayOnWebKiosk>False</DisplayOnWebKiosk>
+
+      <AutoTransferable>True</AutoTransferable>
+
+      <AdvancedLimitID>0</AdvancedLimitID>
+
+      <DisableDisconnectedOffer>True</DisableDisconnectedOffer>
+
+      <CRMSendToExport></CRMSendToExport>
+
+      <LastCRMSendDate></LastCRMSendDate>
+
+      <CRMSendStatus>0</CRMSendStatus>
+
+      <CRMAutoDeployed></CRMAutoDeployed>
+
+      <Purged></Purged>
+
+      <HighValue>False</HighValue>
+
+      <WorkflowStatus>0</WorkflowStatus>
+
+      <ProductionID></ProductionID>
+
+      <UseLegacyWebKiosk>False</UseLegacyWebKiosk>
+
+      <LastDeployValidationMessage></LastDeployValidationMessage>
+
+      <CashierApprovalMessage>False</CashierApprovalMessage>
+
+      <FobEligible>False</FobEligible>
+
+    </RowData>
+
+    <Conditions>
+
+      <Condition Type="1">
+
+        <RowData>
+
+          <ConditionID>729662</ConditionID>
+
+          <OfferID>1377504</OfferID>
+
+          <ConditionTypeID>1</ConditionTypeID>
+
+          <LinkID>337215</LinkID>
+
+          <Tiered>False</Tiered>
+
+          <ConditionOrder>0</ConditionOrder>
+
+          <GrantTypeID>2</GrantTypeID>
+
+          <JoinTypeID>1</JoinTypeID>
+
+          <ExcludedID>0</ExcludedID>
+
+          <QtyUnitType>1</QtyUnitType>
+
+          <DoNotItemDistribute>False</DoNotItemDistribute>
+
+          <MinOrderItemsOnly>False</MinOrderItemsOnly>
+
+          <ExtSeqNum>0</ExtSeqNum>
+
+          <PointsRedeemInstant>True</PointsRedeemInstant>
+
+          <Deleted>False</Deleted>
+
+          <CRMAStatusFlag>2</CRMAStatusFlag>
+
+          <TCRMAStatusFlag>3</TCRMAStatusFlag>
+
+          <LastUpdate>11/15/2017 5:03:27 PM</LastUpdate>
+
+          <Disallow_Edit>False</Disallow_Edit>
+
+          <RequiredFromTemplate>False</RequiredFromTemplate>
+
+          <PointsUseEarnedValue>False</PointsUseEarnedValue>
+
+          <PointsUseNetValue>False</PointsUseNetValue>
+
+          <DiscountableItemsOnly>False</DiscountableItemsOnly>
+
+          <DisallowEdit1>False</DisallowEdit1>
+
+          <DisallowEdit2>False</DisallowEdit2>
+
+          <DisallowEdit3>False</DisallowEdit3>
+
+          <DisallowEdit4>False</DisallowEdit4>
+
+          <AllowAnycardholderOverride>False</AllowAnycardholderOverride>
+
+        </RowData>
+
+      </Condition>
+
+      <Condition Type="2">
+
+        <RowData>
+
+          <ConditionID>729661</ConditionID>
+
+          <OfferID>1377504</OfferID>
+
+          <ConditionTypeID>2</ConditionTypeID>
+
+          <LinkID>202511</LinkID>
+
+          <Tiered>False</Tiered>
+
+          <ConditionOrder>1</ConditionOrder>
+
+          <GrantTypeID>2</GrantTypeID>
+
+          <JoinTypeID>1</JoinTypeID>
+
+          <ExcludedID>0</ExcludedID>
+
+          <QtyUnitType>1</QtyUnitType>
+
+          <DoNotItemDistribute>False</DoNotItemDistribute>
+
+          <MinOrderItemsOnly>False</MinOrderItemsOnly>
+
+          <ExtSeqNum>0</ExtSeqNum>
+
+          <PointsRedeemInstant>True</PointsRedeemInstant>
+
+          <Deleted>False</Deleted>
+
+          <CRMAStatusFlag>0</CRMAStatusFlag>
+
+          <TCRMAStatusFlag>0</TCRMAStatusFlag>
+
+          <LastUpdate>11/15/2017 5:03:27 PM</LastUpdate>
+
+          <Disallow_Edit>False</Disallow_Edit>
+
+          <RequiredFromTemplate>False</RequiredFromTemplate>
+
+          <PointsUseEarnedValue>False</PointsUseEarnedValue>
+
+          <PointsUseNetValue>False</PointsUseNetValue>
+
+          <DiscountableItemsOnly>False</DiscountableItemsOnly>
+
+          <DisallowEdit1>False</DisallowEdit1>
+
+          <DisallowEdit2>False</DisallowEdit2>
+
+          <DisallowEdit3>False</DisallowEdit3>
+
+          <DisallowEdit4>False</DisallowEdit4>
+
+          <AllowAnycardholderOverride>False</AllowAnycardholderOverride>
+
+        </RowData>
+
+        <ConditionTiers>
+
+          <RowData>
+
+            <PKID>222257</PKID>
+
+            <ConditionID>729661</ConditionID>
+
+            <TierLevel>0</TierLevel>
+
+            <AmtRequired>1.000</AmtRequired>
+
+          </RowData>
+
+        </ConditionTiers>
+
+      </Condition>
+
+    </Conditions>
+
+    <Rewards>
+
+      <Reward Type="1">
+
+        <RowData>
+
+          <RewardID>431931</RewardID>
+
+          <OfferID>1377504</OfferID>
+
+          <Tiered>False</Tiered>
+
+          <RewardOrder>1</RewardOrder>
+
+          <RewardTypeID>1</RewardTypeID>
+
+          <RewardAmountTypeID>7</RewardAmountTypeID>
+
+          <LinkID>342186</LinkID>
+
+          <JoinTypeID>1</JoinTypeID>
+
+          <ProductGroupID>202511</ProductGroupID>
+
+          <ExcludedProdGroupID>0</ExcludedProdGroupID>
+
+          <TriggerQty>1</TriggerQty>
+
+          <RewardLimit>0.000</RewardLimit>
+
+          <RewardLimitTypeID>2</RewardLimitTypeID>
+
+          <ALMultiTrans>False</ALMultiTrans>
+
+          <ApplyToLimit>1</ApplyToLimit>
+
+          <SponsorID>0</SponsorID>
+
+          <UseSpecialPricing>False</UseSpecialPricing>
+
+          <SPRepeatAtOccur>0</SPRepeatAtOccur>
+
+          <PromoteToTransLevel>False</PromoteToTransLevel>
+
+          <DoNotItemDistribute>False</DoNotItemDistribute>
+
+          <Deleted>False</Deleted>
+
+          <CMOAStatusFlag>0</CMOAStatusFlag>
+
+          <TCRMAStatusFlag>0</TCRMAStatusFlag>
+
+          <LastUpdate>11/15/2017 5:03:27 PM</LastUpdate>
+
+          <Disallow_Edit>False</Disallow_Edit>
+
+          <RewardDistPeriod>0</RewardDistPeriod>
+
+          <RewardDistLimitVarID>0</RewardDistLimitVarID>
+
+          <DisallowEdit1>False</DisallowEdit1>
+
+          <DisallowEdit2>False</DisallowEdit2>
+
+          <DisallowEdit3>False</DisallowEdit3>
+
+          <DisallowEdit4>False</DisallowEdit4>
+
+          <DisallowEdit5>False</DisallowEdit5>
+
+          <DisallowEdit6>False</DisallowEdit6>
+
+          <DisallowEdit7>False</DisallowEdit7>
+
+          <DisallowEdit8>False</DisallowEdit8>
+
+          <DisallowEdit9>False</DisallowEdit9>
+
+          <AdvancedLimitID>0</AdvancedLimitID>
+
+          <LastPromoVarFlush>1/1/1980 12:00:00 AM</LastPromoVarFlush>
+
+          <SameItemReward>False</SameItemReward>
+
+          <VirtualLink></VirtualLink>
+
+        </RowData>
+
+        <Discounts>
+
+          <RowData>
+
+           <DiscountID>342186</DiscountID>
+
+            <AllowNegative>False</AllowNegative>
+
+            <ChargeBackDeptID>0</ChargeBackDeptID>
+
+            <EffectMinOrder>False</EffectMinOrder>
+
+            <BestDeal>False</BestDeal>
+
+            <DiscountableItemsOnly>False</DiscountableItemsOnly>
+
+            <PrintLineText></PrintLineText>
+
+            <LastUpdate>11/15/2017 5:03:27 PM</LastUpdate>
+
+            <SVLinkID></SVLinkID>
+
+            <StaticFuel>False</StaticFuel>
+
+            <WebText></WebText>
+
+          </RowData>
+
+        </Discounts>
+
+      </Reward>
+
+    </Rewards>
+
+    <Terminals>
+
+      <RowData>
+
+        <PKID>394913</PKID>
+
+        <OfferID>1377504</OfferID>
+
+        <TerminalTypeID>1</TerminalTypeID>
+
+        <LastUpdate>11/15/2017 5:03:27 PM</LastUpdate>
+
+        <Excluded>False</Excluded>
+
+      </RowData>
+
+    </Terminals>
+
+  </Offer>
+
+</CmOfferLoad>
