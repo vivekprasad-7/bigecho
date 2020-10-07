@@ -49,9 +49,40 @@ you should run a VACUUM operation regularly, especially after large data loads, 
 Part A ENCODING
 https://www.blendo.co/amazon-redshift-guide-data-analyst/maintenance/column-compression-settings/
 Byte-Dictionary Encoding can be more efficient. Think of possible cases for such an encoding columns that hold data like country names
+
 For DATETIMES and id/key Delta Encodings can be more efficient.
+
 LZO is automatically assigned by Amazon Redshift for the majority of the available data
+
 Mostly Encoding is an interesting case of an encoding, mainly used with numerical data.
 . If for example, you have relatively small integers and a few outliers of huge numbers, you can select a data type that can hold the large numbers but compress the majority of the values using a smaller numerical data type.
 Text255 and Text32K encodings like the Runlength Encoding are exploiting the higher occurrence of specific terms inside a text to compress the column data. If the analyst has identified that a column with string contains specific terms more often, she can select this encoding.
  It might not be a frequent process like Vacuuming, but you should certainly do it
+ 
+ 
+
+Distribution styles
+ 
+When you create a table, you can designate one of four distribution styles; AUTO, EVEN, KEY, or ALL.
+
+If you don't specify a distribution style, Amazon Redshift uses AUTO distribution.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
