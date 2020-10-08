@@ -67,7 +67,8 @@ When you create a table, you can designate one of four distribution styles; AUTO
 
 If you don't specify a distribution style, Amazon Redshift uses AUTO distribution.
  
- 
+------------------------------------------- SPARK ----------------------------------------------------------------------------------------------- 
+out of memory error
  
  
  
