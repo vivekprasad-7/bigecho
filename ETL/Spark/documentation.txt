@@ -69,7 +69,15 @@ If you don't specify a distribution style, Amazon Redshift uses AUTO distributio
  
 ------------------------------------------- SPARK ----------------------------------------------------------------------------------------------- 
 out of memory error
- 
+ df= df.withColumn("BVIndex",when(df.level3 == ("Production Time"),'high').otherwise("low"))
+
+spark.default.parallelism
+spark.sql.shuffle.partitions
+spark.executor.cores
+spark.executor.memory | spark.driver.memory 
+spark.yarn.executor.memoryOverhead=10% of total executor memory
+
+spark.dynamicAllocation.enabled 
  
  
  
