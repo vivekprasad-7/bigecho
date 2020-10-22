@@ -1,27 +1,22 @@
-import Merchant_Dimention as MD
-import mysql.connector
-import mysql.connector
 import datetime
-current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 from connectionDB import Database
+from getStartDateEndDate import findMinID
+from pipeline1 import pipeline1
+from pipeline2 import pipeline2
 
-#Function to fetch Min Id
 current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 obj = Database()
 
-def findMinID(pipeline_ID):
-    try:
-        latestRunResult = obj.getMinId(pipeline_ID)[0][0]
-        return(latestRunResult)
-
-    except Exception as e:
-        print(e)
-
-
-
-minID = findMinID(1)
-MD.main(callStatus=0,minid =minID, created_date=current_time)
-
+if pipeline1==1:
+    minID = findMinID(1)
+    print(minID)
+    x = pipeline1()
+    x.main(callStatus=0,minid =minID, created_date=current_time)
+else:
+    minID = findMinID(2)
+    print(minID)
+    x = pipeline2()
+    x.main(callStatus=0, minid=minID, created_date=current_time)
 
 '''#checking StartDateEndDate Pipeline
 pipeline_id = 6

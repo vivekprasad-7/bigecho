@@ -2,16 +2,18 @@ import datetime
 from datetime import timedelta
 from datetime import datetime
 from pytz import timezone
+from connectionDB import Database
 import pytz
 tz_IST = timezone('Asia/Kolkata')  ## take created date while retrying
 utc = timezone('UTC')  #
 # created_date = '2020-10-13 10:20:00'
 # date_time_obj = datetime.strptime(created_date, '%Y-%m-%d %H:%M:%S')
-
+obj = Database()
 
 
 def finddate(created_date,pipeline_id):
     #created_date = '2020-10-13 10:20:00'
+    created_date = str(created_date)
     date_time_obj = datetime.strptime(created_date, '%Y-%m-%d %H:%M:%S')
 
     if pipeline_id==3: #ExecuteBlazenetExtraction.py
@@ -53,4 +55,14 @@ def finddate(created_date,pipeline_id):
     #     date_array = (start + timedelta(days=x) for x in range(0, (end - start).days))
     #
     #     return date_array
+
+
+def findMinID(pipeline_ID):
+    try:
+        latestRunResult = obj.getMinId(pipeline_ID)
+        return(latestRunResult[0][0])
+
+    except Exception as e:
+        print(e)
+        print("I am here2")
 
