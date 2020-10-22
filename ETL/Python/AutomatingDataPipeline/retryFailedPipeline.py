@@ -7,7 +7,7 @@ from pipeline1 import pipeline1
 from pipeline2 import pipeline2
 current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 obj = Database()
-pipe = pipeline1()
+pipe1 = pipeline1()
 pipe2 = pipeline2()
 try:
     latestRunResult = obj.selectRetryResult()
@@ -15,6 +15,11 @@ try:
     jobStatus = [] # updating latest run Status
     for i, j in enumerate(latestRunResult):
         executionFlag = 0  # represents whether we should run the pipeline for duplicatd pipeline
+        if j[0]==1:
+            pipe=pipe1
+        if j[0] == 2:
+            pipe = pipe2
+
         if i == 0:
             executionFlag = 0
         else:
@@ -39,7 +44,7 @@ try:
                 if j[0] == 1:
                     minID = findMinID(j[0])
                     enddate = getStartDateEndDate.finddate(j[1],j[0])
-                    pipe.main(callStatus=1, minid=minID, created_date=j[1],enddate=enddate) # naming convention isretry
+                    pipe1.main(callStatus=1, minid=minID, created_date=j[1],enddate=enddate) # naming convention isretry
                 ## Some CODE
                 latestRunStatus = pipe.jobExecutionStatus()
                 jobStatus.append(latestRunStatus)
