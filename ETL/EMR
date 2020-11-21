@@ -1,1 +1,17 @@
+ap-south-1 (mumbai)
+
+1 MASTER- m4 large -- general purpose--2virtual cpu-2.4ghz , 8 gb memory, ebs optimized by default
+and 1 CORE- r4 xlarge-- memory intensive--2 virtual cpu,15gb ram(real time/hadoop cluster), 10gbps n/w, ebs optimized by default
+
+
+FULL dump
+
+1 MASTER- m4 large -- general purpose--2virtual cpu-2.4ghz , 8 gb memory, ebs optimized by default
+and 2 CORE- r4 xlarge-- memory intensive--2 virtual cpu,15gb ram(real time/hadoop cluster),10gbps n/w, ebs optimized by default
+EBS- gp2(general purpose ssd) default (1gb-16tb range)
+master-100gb
+core-500gb
+
+task node(do not take part as data node in hdfs)
+r4 xlarge ,2 instance
 
