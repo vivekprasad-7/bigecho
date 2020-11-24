@@ -15,3 +15,14 @@ core-500gb
 task node(do not take part as data node in hdfs)
 r4 xlarge ,2 instance
 
+run_job_flow- A maximum of 256 steps are allowed in each job flow.
+
+EMR=5.17
+ebsrootvolumesize=50gb
+
+describe_cluster
+
+grep 'num-exe:2' running.json || {echo 'number of executor less then 3' && exit 0;}
+chmod 744 filex.json
+wget url
+tar -xvzf  file.tar.gz
