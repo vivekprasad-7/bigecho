@@ -1,0 +1,48 @@
+
+1   1
+1   1
+2   2
+3   2
+Null  NULL
+
+inner join
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+
+Left
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+3 Null
+NULL NULL
+
+right
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+NULL NULL
+
+FULL
+1 1
+1 1
+1 1
+1 1
+2 2
+2 2
+3 NULL
+NULL NULL
+NULL NULL
+
+
+
+
